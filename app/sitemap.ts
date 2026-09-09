@@ -6,12 +6,17 @@ const paths = [
   '/',
   '/invoice-generator',
   '/invoice-template',
+  '/invoice-templates',
   '/free-invoice-generator',
   '/invoice-maker',
   '/online-invoice-generator',
   '/freelance-invoice',
   '/contractor-invoice',
   '/small-business-invoice',
+  '/pdf-invoice-template',
+  '/word-invoice-template',
+  '/excel-invoice-template',
+  '/printable-invoice',
   '/about',
   '/contact',
   '/privacy-policy',
@@ -19,8 +24,5 @@ const paths = [
 ];
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  return paths.map((path) => ({
-    url: `${base}${path}`,
-    lastModified: new Date(),
-  }));
+  return paths.map((path) => ({ url: `${base}${path}`, lastModified: new Date() }));
 }
